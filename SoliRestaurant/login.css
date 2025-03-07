@@ -1,0 +1,66 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 590px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 300px;
+    margin: 150px auto 0;
+    text-align: center;
+}
+
+.login-form:hover {
+    transform: scale(1.05);
+}
+
+.login-form label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-form input[type="tel"] {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+}
+
+.login-form button {
+    padding: 10px 20px;
+    background-color: #7D4C21;
+    color: white;
+    border: none;
+    border-radius: 30px 0px 30px 0px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: rgb(99, 59, 24);
+}

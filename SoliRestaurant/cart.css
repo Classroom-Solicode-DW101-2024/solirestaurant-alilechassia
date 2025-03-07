@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    text-align: center;
+}
+
+h2 {
+    color: #7D4C21;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(125, 76, 33, 0.1);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    background-color: #7D4C21;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: rgb(99, 59, 24);
+}
+
+.btn-small {
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-increase {
+    color: #7D4C21;
+    border: 1px solid #7D4C21;
+}
+
+.btn-decrease {
+    color: #7D4C21;
+    border: 1px solid #7D4C21;
+}
+
+.btn-small:hover {
+    opacity: 0.8;
+}
+.empty-cart {
+    font-size: 18px;
+    color: gray;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    z-index: 10;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 590px;
+    object-fit: cover;
+    z-index: -1;
+}
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+.header-nav a:hover {
+    text-decoration: underline;
+}

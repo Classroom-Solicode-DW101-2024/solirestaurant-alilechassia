@@ -1,0 +1,177 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 590px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    margin-top: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-form {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.filter-form select, .filter-form button {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    justify-content: center;
+    padding: 30px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%; 
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.add-to-cart {
+    background-color: #7D4C21;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: rgb(99, 59, 24);
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* Custom styles for the registration form */
+form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 100px auto;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"], form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7D4C21;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(99, 59, 24);
+}
+
+form a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #7D4C21;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+.erreur {
+    color: red;
+    font-size: 14px;
+}
